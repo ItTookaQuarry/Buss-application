@@ -2,11 +2,10 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Roboto } from "next/font/google";
 import "tw-elements/dist/css/tw-elements.min.css";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
-
-config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });

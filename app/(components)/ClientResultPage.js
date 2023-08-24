@@ -8,11 +8,10 @@ import Image from "next/image";
 import pkm from "/public/pkm23.jpg";
 import Departure from "../(components)/Departure";
 import Link from "next/link";
-import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import Form from "../(components)/Form";
 import { myAction } from "../(components)/action";
-
 import { whattimeisit } from "./whatdate";
 
 export default function ClientResultPage(props) {

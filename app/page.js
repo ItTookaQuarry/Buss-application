@@ -1,9 +1,10 @@
 "use client"
 import React from 'react'
 import Link from 'next/link'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { buses } from './(components)/buses'
 import {  faBus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Createtabofstops } from './(components)/Createtabofstops';
 import { Height } from '@mui/icons-material';
 import { useWindowSize } from "@uidotdev/usehooks";

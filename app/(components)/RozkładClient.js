@@ -5,12 +5,13 @@ import pkm from "/public/pkm23.jpg";
 import Link from "next/link";
 import Stop from "./stops";
 import { useWindowSize } from "@uidotdev/usehooks";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 faCircleXmark,
   faRotate,
   faArrowLeft
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function RozkładClient(props) {
 
 const beginignstate= props.res[0].length===2 ? 0 : "12" 
