@@ -12,7 +12,6 @@ import { FaArrowUp, } from "react-icons/fa";
 
 import { FaArrowDown } from "react-icons/fa";
 import Form from "../(components)/Form";
-import { myAction } from "../(components)/action";
 import { whattimeisit } from "./whatdate";
 
 export default function ClientResultPage(props) {
@@ -150,7 +149,6 @@ export default function ClientResultPage(props) {
             position: "relative",
             gap:"5%"
           }}
-          action={myAction}
         >
           <Form />
         </form>

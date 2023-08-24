@@ -13,9 +13,15 @@ export default function Form() {
   const searchParams = useSearchParams();
   const uniquebusstops = Array.from(new Set(bUsstops));
 
-  const [pocz, setPocz] = useState("");
 
-  const [koniec, setKoniec] = useState("");
+
+
+
+
+
+  const [pocz, setPocz] = useState(" ");
+
+  const [koniec, setKoniec] = useState(" ");
 
   function ChangePocz(event) {
     setPocz(event.target.value);
@@ -74,11 +80,18 @@ export default function Form() {
 
      {koniec.length>0&& <datalist id="buses2">{busforEnd}</datalist>}
 
-
-
-      <button type="submit" class={classtodisplay} style={{display:"grid"}}>
+ 
+<Link href={`result?start=${uniquebusstops.indexOf(pocz)}&koniec=${uniquebusstops.indexOf(koniec)}&todisplay=1`} >
+      <button type="submit" class={classtodisplay} style={{display:"grid",margin:"auto"}}>
         <FaSearch style={{margin:"auto"}}/> 
       </button>
+      </Link>
+
+
+
+
+
+
     </>
   );
 }
