@@ -101,7 +101,7 @@ const [val,setvalue]= React.useState("")
 
                       <h2 className={classtodisplay} style={{gridColumn:"1/2"}}>Kierunek: {direction} 
                       </h2>
-                    <Link href={`http://localhost:3000/${bus}`}> <div style={{gridColumn:"2/3", position:"relative",textAlign:"center",margin:"auto",}} className={classtodisplay}> <AiFillCloseCircle style={{fontSize:"1.5em"}}/></div>
+                    <Link href={`https://buss-application.vercel.app/${bus}`}> <div style={{gridColumn:"2/3", position:"relative",textAlign:"center",margin:"auto",}} className={classtodisplay}> <AiFillCloseCircle style={{fontSize:"1.5em"}}/></div>
                     </Link> 
                     <div className={classtodisplay} style={{gridColumn:"1/3",margin:"auto"}}> Przystanek: {each}</div>
                     
