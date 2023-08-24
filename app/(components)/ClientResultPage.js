@@ -96,7 +96,7 @@ export default function ClientResultPage(props) {
   });
 
   console.log(tabletodisplaytouser);
-  const tomapp = [...tabletodisplaytouser]?.splice(pagetodisplay - 1, 5);
+  const tomapp = [...tabletodisplaytouser]?.splice(pagetodisplay - 1, 4);
 
   const todisplay = tomapp.map((each,indeks) => {
     const departure = DepartureTime(
@@ -168,7 +168,7 @@ export default function ClientResultPage(props) {
         >
           {table !== 0 && pagetodisplay > 1 && (
             <Link
-              href={`${linktab}&todisplay=${pagetodisplay - 5}`}
+              href={`${linktab}&todisplay=${pagetodisplay - 4}`}
               style={{ margin: "auto" }}
             >
               {" "}
@@ -181,11 +181,11 @@ export default function ClientResultPage(props) {
           {todisplay}
 
           {table !== 0 &&
-            tomapp.length === 5 &&
+            tomapp.length === 4 &&
             tomapp[tomapp.length - 1] !=
               tabletodisplaytouser[tabletodisplaytouser.length - 1] && (
               <Link
-                href={`${linktab}&todisplay=${pagetodisplay + 5}`}
+                href={`${linktab}&todisplay=${pagetodisplay + 4}`}
                 style={{ margin: "auto" }}
               >
                 {" "}
