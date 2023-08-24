@@ -1,7 +1,4 @@
 "use server"
-import Link from "next/link";
-import fetch from "node-fetch";
-import Stop from "../(components)/stops";
 import RozkładClient from "../(components)/RozkładClient";
 export default async function Bus({ params, searchParams }) {
   const hours = searchParams.hours;
