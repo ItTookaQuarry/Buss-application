@@ -3,15 +3,9 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { redirect } from "next/navigation";
 import { bUsstops } from "./BUSSTOPS";
-import {
-  faArrowLeft,
-  faArrowsRotate,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/navigation";
-import { buses } from "./buses";
+import { FaSearch ,} from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
 export default function Form() {
   const classtodisplay =
@@ -53,7 +47,10 @@ export default function Form() {
 
   return (
     <>
-  <Link href="/"><div className={classtodisplay}> <FontAwesomeIcon icon={faArrowLeft} /> Rozkład Jazdy</div> </Link>
+  <Link href="/" ><div className={classtodisplay} style={{display:"grid",gridTemplateColumns:"1fr 10fr", }}> <FaArrowLeft /> <div style={{margin:"auto",textAlign:"center"}}> Rozkład Jazdy</div> </div> </Link>
+
+
+
       <input
       style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr"}}
         className="formplaceholder"
@@ -75,8 +72,8 @@ export default function Form() {
       />
 
       <datalist id="buses2">{busforEnd}</datalist>
-      <button type="submit" class={classtodisplay}>
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
+      <button type="submit" class={classtodisplay} style={{display:"grid"}}>
+        <FaSearch style={{margin:"auto"}}/> 
       </button>
     </>
   );

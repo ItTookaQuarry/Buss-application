@@ -8,8 +8,9 @@ import Image from "next/image";
 import pkm from "/public/pkm23.jpg";
 import Departure from "../(components)/Departure";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FaArrowUp, } from "react-icons/fa";
+
+import { FaArrowDown } from "react-icons/fa";
 import Form from "../(components)/Form";
 import { myAction } from "../(components)/action";
 import { whattimeisit } from "./whatdate";
@@ -172,7 +173,7 @@ export default function ClientResultPage(props) {
             >
               {" "}
               <button type="submit" class={classtodisplay}>
-                <FontAwesomeIcon icon={faArrowUp} />{" "}
+             <FaArrowUp/>
               </button>
             </Link>
           )}
@@ -189,10 +190,7 @@ export default function ClientResultPage(props) {
               >
                 {" "}
                 <button type="submit" class={classtodisplay} >
-                  <FontAwesomeIcon
-                    icon={faArrowDown}
-                    style={{ color: "white" }}
-                  />{" "}
+                <FaArrowDown/>
                 </button>
               </Link>
             )}

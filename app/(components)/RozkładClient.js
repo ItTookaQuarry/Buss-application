@@ -5,13 +5,8 @@ import pkm from "/public/pkm23.jpg";
 import Link from "next/link";
 import Stop from "./stops";
 import { useWindowSize } from "@uidotdev/usehooks";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-faCircleXmark,
-  faRotate,
-  faArrowLeft
-} from "@fortawesome/free-solid-svg-icons";
-
+import { FaArrowLeft,FaRegWindowClose } from "react-icons/fa";
+import { AiFillCloseCircle} from "react-icons/ai";
 export default function RozkładClient(props) {
 
 const beginignstate= props.res[0].length===2 ? 0 : "12" 
@@ -55,7 +50,7 @@ const [val,setvalue]= React.useState("")
               gap: "5px",
             }}
           >
-     <Link href="/"><div className={classtodisplay}> <FontAwesomeIcon icon={faArrowLeft} /> Rozkład Jazdy</div> </Link>
+      <Link href="/" style={{margin:"auto"}}><div className={classtodisplay} style={{display:"grid",gridTemplateColumns:"1fr 10fr", margin:"auto",}}> <FaArrowLeft /> <div style={{margin:"auto",textAlign:"center",}}> Rozkład Jazdy</div> </div> </Link>
             <h1
               className={classtodisplay}
               style={{ textAlign: "center", margin: "auto" }}
@@ -75,7 +70,7 @@ const [val,setvalue]= React.useState("")
                   return seti(toreturn);
                 }}
               >
-                <FontAwesomeIcon icon={faRotate} /> Zmień Kierunek
+           Zmień Kierunek
               </div>
             )}
             
@@ -100,13 +95,13 @@ const [val,setvalue]= React.useState("")
                     }}
                   >
                     {" "}
-                  <div style={{margin:"auto",display:"grid",gap:"4%",gridTemplateColumns:"5fr 1fr"}}  >    
+                  <div style={{margin:"auto",display:"grid",gap:"4%",gridTemplateColumns:"fr 1fr"}}  >    
                   
                
 
                       <h2 className={classtodisplay} style={{gridColumn:"1/2"}}>Kierunek: {direction} 
                       </h2>
-                    <Link href={`http://localhost:3000/${bus}`}> <div style={{gridColumn:"2/3",margin:"auto"}} className={classtodisplay}><FontAwesomeIcon icon={faCircleXmark}  /></div>
+                    <Link href={`http://localhost:3000/${bus}`}> <div style={{gridColumn:"2/3", position:"relative",textAlign:"center",margin:"auto",}} className={classtodisplay}> <AiFillCloseCircle style={{fontSize:"1.5em"}}/></div>
                     </Link> 
                     <div className={classtodisplay} style={{gridColumn:"1/3",margin:"auto"}}> Przystanek: {each}</div>
                     

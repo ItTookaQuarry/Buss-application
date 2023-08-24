@@ -2,11 +2,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { buses } from './(components)/buses'
-import {  faBus } from "@fortawesome/free-solid-svg-icons";
+import { FaBus } from 'react-icons/fa';
 import { Createtabofstops } from './(components)/Createtabofstops';
-import { Height } from '@mui/icons-material';
+
 import { useWindowSize } from "@uidotdev/usehooks";
 import pkm from "/public/pkm23.jpg";
 import Image from 'next/image';
@@ -20,12 +19,11 @@ const mappedbusses=buses.map((each,index)=>{
   return (
 
     <Link href={each}>
-    <div className={classtodisplay } style={{margin:"auto",display:"grid",height:"90%", width:"90%"}}>
+    <div className={classtodisplay } style={{margin:"auto",display:"flex",textAlign:"center", margin:"auto",fontSize:"1.5em", gridTemplateColumns:"1fr 1fr 1fr"}}>
     
-    <div style={{textAlign:"center", margin:"auto",fontSize:"2em"} } >
-    <FontAwesomeIcon icon={faBus}/>
-    {todisplay}<p style={{fontSize:"0.5em"}}> Rozkład jazdy </p>
-    </div>
+   
+ <div style={{margin:"auto",display:"grid", textAlign:"center"}}><FaBus style={{margin:"auto"}} /> {`${   todisplay}`}  </div>    <p style={{fontSize:"0.7em",margin:"auto"}}> Rozkład jazdy </p>
+ 
 
 
    </div></Link>
