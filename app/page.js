@@ -4,8 +4,6 @@ import Link from 'next/link'
 
 import { buses } from './(components)/buses'
 import { FaBus } from 'react-icons/fa';
-import { Createtabofstops } from './(components)/Createtabofstops';
-
 import { useWindowSize } from "@uidotdev/usehooks";
 import pkm from "/public/pkm23.jpg";
 import Image from 'next/image';

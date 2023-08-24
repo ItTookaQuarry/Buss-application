@@ -8,7 +8,7 @@ export async function fetchbuses(start, stop) {
   const Początek = uniquebusstops[start];
   const Koniec = uniquebusstops[stop];
   const fetchPromises = buses.map((url) =>
-    fetch(`http://localhost:3000/api/${url}`)
+    fetch(`https://buss-application.vercel.app/api/${url}`)
   );
   const responses = await Promise.all(fetchPromises);
 
