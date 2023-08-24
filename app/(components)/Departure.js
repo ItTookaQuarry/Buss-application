@@ -1,7 +1,5 @@
 "use client"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faBus } from "@fortawesome/free-solid-svg-icons";
 
 
 
