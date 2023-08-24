@@ -35,6 +35,7 @@ export default function Form() {
       return <option>{each}</option>;
     });
 
+
   const busforEnd = uniquebusstops
     .filter((each) => {
       const busstringtoarray = [...each];
@@ -42,7 +43,7 @@ export default function Form() {
       return busstringtoarray.splice(0, koniec.length).join("") === koniec;
     })
     .map((each) => {
-      return <option>{each}</option>;
+      return <option style={{backgroundColor:"red"}}>{each}</option>;
     });
 
   return (
@@ -60,7 +61,7 @@ export default function Form() {
         list="buses1"
         placeholder="Początek" 
       />
-      <datalist id="buses1">{busforStart}</datalist>
+  {pocz.length>0 &&   <datalist id="buses1">{busforStart}</datalist>}
 
       <input
       placeholder="Koniec"
@@ -71,7 +72,10 @@ export default function Form() {
         list="buses2"
       />
 
-      <datalist id="buses2">{busforEnd}</datalist>
+     {koniec.length>0&& <datalist id="buses2">{busforEnd}</datalist>}
+
+
+
       <button type="submit" class={classtodisplay} style={{display:"grid"}}>
         <FaSearch style={{margin:"auto"}}/> 
       </button>

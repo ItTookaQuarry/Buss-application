@@ -35,7 +35,6 @@ background-color: red;}
 
 .formplaceholder::placeholder {
   position: relative;
-   left: 10px;
   font-weight: bold;
   color: black;
   text-align: center;

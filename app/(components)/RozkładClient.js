@@ -121,7 +121,7 @@ const [val,setvalue]= React.useState("")
         
         {each!==direction&&    <Link
                     className={classtodisplay}
-                    href={`http://localhost:3000/${bus}?hours=${value}`}
+                    href={`https://buss-application.vercel.app/${bus}?hours=${value}`}
                   >
                     <h1 style={{ margin: "auto" }}> {each}</h1>
                   </Link>}
