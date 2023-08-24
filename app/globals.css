@@ -24,4 +24,102 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+
+}
+
+.scrollbar{
+background-color: red;}
+
+
+
+.formplaceholder::placeholder {
+  position: relative;
+   left: 10px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-height: 600px) {
+  .resultsgrid{height: 300px;
+  overflow-y: scroll;
+  
+  }
+
+}
+
+@media only screen and (max-height: 550px) {
+  .resultsgrid{height: 270px;
+  overflow-y: scroll;
+  
+  }
+
+
+
+
+}@media only screen and (max-height: 500px) {
+  .resultsgrid{height: 230px;
+  overflow-y: scroll;
+  
+  }
+
+}
+
+@media only screen and (max-height: 470px) {
+  .resultsgrid{height: 200px;
+  overflow-y: scroll;
+  
+  }
+
+}
+
+
+@media only screen and (max-height: 450px) {
+  .resultsgrid{height: 180px;
+  overflow-y: scroll;
+  
+  }
+
+}
+
+
+@media only screen and (max-height: 400px) {
+  .resultsgrid{height: 150px;
+  overflow-y: scroll;
+  
+  }
+
+}
+
+@media only screen and (max-height: 350px) {
+  .resultsgrid{height: 120px;
+  overflow-y: scroll;
+  
+  }
+
+}
+
+@media only screen and (max-height: 330px) {
+  .resultsgrid{height: 100px;
+  overflow-y: scroll;
+  
+  }
+
 }
