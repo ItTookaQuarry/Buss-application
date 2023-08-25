@@ -94,6 +94,7 @@ export default function Form(props) {
   return (
     <>
       <form
+      autocomplete="off" 
         style={{
           gridColumn: "2/3",
           margin: "auto",
