@@ -19,9 +19,9 @@ export default function Form() {
 
 
 
-  const [pocz, setPocz] = useState(" ");
+  const [pocz, setPocz] = useState("");
 
-  const [koniec, setKoniec] = useState(" ");
+  const [koniec, setKoniec] = useState("");
 
   function ChangePocz(event) {
     setPocz(event.target.value);
