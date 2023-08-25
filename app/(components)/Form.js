@@ -165,6 +165,8 @@ export default function Form(props) {
             type="submit"
             onClick={()=>{props.funct(true) 
               setisfocusedpocz(false)
+              setPocz("")
+              setKoniec("")
             }}
             
             class={classtodisplay}
