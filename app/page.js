@@ -41,8 +41,6 @@ if(size.width<700){
 
 
 
-
-
   
   return (
     

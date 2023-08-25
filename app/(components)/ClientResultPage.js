@@ -96,11 +96,23 @@ export default function ClientResultPage(props) {
 
   console.log(tabletodisplaytouser);
   const tomapp = [...tabletodisplaytouser]?.splice(pagetodisplay - 1, 5);
+  const [showresults,setshowresults]=React.useState(true)
+
+  function showresultss(bull){
+    setshowresults(bull)
+  }
+  
+
+
+
+
 
   const todisplay = tomapp.map((each,indeks) => {
     const departure = DepartureTime(
       changetimetominutes(each.hour) - changetimetominutes(currHcurrM)
     );
+
+
 
 
     return (
@@ -140,21 +152,12 @@ export default function ClientResultPage(props) {
         }}
       />
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr " }}>
-        <form
-          style={{
-            gridColumn: "2/3",
-            margin: "auto",
-            display: "grid",
-            textAlign: "center",
-            position: "relative",
-            gap:"5%"
-          }}
-        >
-          <Form />
-        </form>
+     
+          <Form  funct={showresultss}/>
+
       </div>
       <br></br>
-      {table?.length > 0 && (
+      {table?.length > 0 && showresults && (
         <div
           className="resultsgrid"
           style={{

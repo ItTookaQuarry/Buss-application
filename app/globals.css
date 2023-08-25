@@ -40,7 +40,10 @@ background-color: red;}
   text-align: center;
   }
 
-
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 
 
 
