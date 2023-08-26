@@ -8,16 +8,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import pkm from "/public/pkm23.jpg";
 import Image from 'next/image';
 
-export async function generateMetadata({ params, searchParams }, parent) {
 
- 
-
- 
-  return {
-    title: `Strona główna Aplikacji Autobusowej`,
-    description:`Strona główna Aplikacji a`
-  }
-}
  
 
 
